@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< Updated upstream
 
 function App() {
   return (
@@ -20,6 +21,18 @@ function App() {
       </header>
     </div>
   );
-}
+=======
+import Gameshop from './components/gameshop'
+import favourites from './components/MyFavourites';
+import { Route, Routes } from "react-router-dom"
+import MyFavourites from './components/MyFavourites';
 
+
+function App() {
+  return (
+    <MyFavourites/>
+ )
+>>>>>>> Stashed changes
+}
+}
 export default App;
