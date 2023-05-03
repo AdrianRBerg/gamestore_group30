@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react"
 
-export default function Buy(props) {
-    const [cart, setCart] = useState([])
-
-    const handleCart = () => {
-        setCart([...cart, props.game])
-    }
+export default function Buy() {
     return(
         <a>
         <button>Kjøp</button>

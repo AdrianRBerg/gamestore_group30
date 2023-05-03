@@ -1,22 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
+
 export default function GameCard({gameId}) {
-    const [game, setGame] = useState(null);
-    const apiKey = 'be9e1b206b684a099d8c1813a128a044';
+    const [game, setGame] = useState(null)
+    const apiKey = 'be9e1b206b684a099d8c1813a128a044'
     
     useEffect(() => {
       async function fetchGame() {
-        const response = await fetch(`https://api.rawg.io/api/games/${gameId}?key=${apiKey}`);
-        const data = await response.json();
-        setGame(data);
+        const response = await fetch(`https://api.rawg.io/api/games/${gameId}?key=${apiKey}`)
+        const data = await response.json()
+        setGame(data)
       }
       fetchGame();
-    }, [gameId, apiKey]);
+    }, [gameId, apiKey])
     
     if (!game) {
-      return <span>Loading...</span>;
+      return <span>Loading...</span>
     }
     
-    const { name, background_image, rating, released, platforms } = game;
+    const { name, background_image, rating, released, platforms } = game
     
     return (
       <section className="game-card">
@@ -26,5 +27,5 @@ export default function GameCard({gameId}) {
         <p>Released: {released}</p>
         <p>Platforms: {platforms.map(platform => platform.platform.name).join(', ')}</p>
       </section>
-    );
+    )
   }
