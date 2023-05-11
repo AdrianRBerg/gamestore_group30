@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 
-export default function Buy() {
+export default function Buy({ Link }) {
     return(
-        <a>
+        <a href={Link}>
         <button>Kjøp</button>
         </a>
     )
