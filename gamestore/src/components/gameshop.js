@@ -13,6 +13,7 @@ export default function Gameshop({}) {
                 name={game.title}
                 image={game.img}
                 genre={game.genres.join(', ')}
+                link={`/game/${game.id}`}
             />
             <Buy Link={game.link}/>
             </section>
