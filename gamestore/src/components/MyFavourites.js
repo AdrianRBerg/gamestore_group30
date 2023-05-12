@@ -26,6 +26,6 @@ function MyFavorites() {
       </div>
     );
   }
+}
 
-
-export default MyFavorites;
+export default MyFavorites

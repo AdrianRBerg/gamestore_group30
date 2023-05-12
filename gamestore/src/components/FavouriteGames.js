@@ -1,4 +1,4 @@
-
+export default function FavouriteGames() {
 const games = [
     {
       id: 1,
@@ -26,3 +26,4 @@ const games = [
       <FavouriteGames favourites={favourites} />
     </div>
   );
+      }
