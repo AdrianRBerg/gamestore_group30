@@ -27,15 +27,5 @@ function MyFavorites() {
     );
   }
 
-  return (
-    <div>
-      <h1>My favourite games</h1>
-      {games.map(game => (
-        <GameDisplay key={game.id} game={game} />
-      ))}
-      <FavouriteGames favourites={favourites} />
-    </div>
-  );
-}
 
 export default MyFavorites;
