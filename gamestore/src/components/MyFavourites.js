@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FavouriteGames } from './FavouriteGames';
 
+
 const games = [];
 
 function MyFavorites() {
