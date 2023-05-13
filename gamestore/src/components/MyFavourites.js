@@ -1,31 +1,26 @@
-import React, { useState } from 'react';
-import { FavouriteGames } from './FavouriteGames';
+import { useEffect, useState } from "react"
+import GameCard from "./GameCard"
+import { mygames  } from "./games"
 
 
-const games = [];
-
-function MyFavorites() {
-  const [favourites, setFavourites] = useState([]);
-
-  function addToFavourites(game) {
-    setFavourites([...favourites, game]);
-  }
-
-  function GameDisplay(props) {
-    const { game } = props;
-
-    function handleAddToFavourites() {
-      addToFavourites(game);
-    }
-
+export default function MyFavourites({}) {
     return (
-      <div>
-        <h2>{game.title}</h2>
-        <p>{game.description}</p>
-        <button onClick={handleAddToFavourites}>Add to favourites</button>
-      </div>
-    );
-  }
+    <>
+    <h1>My Games</h1>
+        {mygames.map(game =>{
+            if(game.fav == true){
+              <>
+              <section key={game.id}>
+              <GameCard
+                  name={game.title}
+                  image={game.img}
+                  genre={game.genres.join(', ')}
+                  link={`/game/${game.id}`}
+              />
+              </section>
+            </>
+            }
+        })} 
+        </>
+    )
 }
-
-export default MyFavorites
