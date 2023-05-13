@@ -14,7 +14,7 @@ export default function MyGames({}) {
                 name={game.title}
                 image={game.img}
                 genre={game.genres.join(', ')}
-                link={`/game/${game.id}`}
+                link={`/game/${game.slug}`}
             />
             </section>
             </> 

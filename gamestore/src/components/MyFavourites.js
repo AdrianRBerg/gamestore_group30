@@ -16,7 +16,7 @@ export default function MyFavourites({}) {
                 name={game.title}
                 image={game.img}
                 genre={game.genres.join(', ')}
-                link={`/game/${game.id}`}
+                link={`/game/${game.slug}`} //erstatter id med slug for penere url
             />
             </section>
             </> 
