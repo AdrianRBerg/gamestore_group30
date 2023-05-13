@@ -2,7 +2,9 @@ import { useEffect, useState } from "react"
 import Buy from "./buy"
 import GameCard from "./GameCard"
 import { store } from "./games"
+
 export default function Gameshop({}) {
+    
     return (
     <>
     <h1>Gameshop</h1>
