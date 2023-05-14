@@ -30,8 +30,8 @@ h2{
     width: 100%;
     background-color: white;
     border-radius: 4px;
-    max-width: 90%;
-    padding: 5rem;
+    max-width: 1000px;
+    padding: 10rem;
     margin: 2rem;
  
   }
@@ -39,7 +39,7 @@ h2{
     width: 100%;
     background-color: white;
     border-radius: 4px;
-    max-width: 80%;
+    max-width: 1000px;
     padding: 10rem;
     margin: 2rem;
  
@@ -48,7 +48,7 @@ h2{
     width: 100%;
     background-color: white;
     border-radius: 4px;
-    max-width: 80%;
+    max-width: 1000px;
     padding: 10rem;
     margin: 2rem;
     

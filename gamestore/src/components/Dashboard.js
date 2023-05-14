@@ -11,13 +11,13 @@ export default function Dashboard(){ //https://lms.webtricks.blog/kurs/uin/react
                 <header>
                     <h1> MACs Gamehub </h1>
                     <br></br>
-
-                    <h2>GAMESHOP</h2>
-                    <article className="Game-article1">
-                    </article>
                 </header>
 
                 <main>
+                    <h2>GAMESHOP</h2>
+                    <article className="Game-article1">
+                    </article>
+                    
                     <h2>MY GAMES-LIBRARY</h2>
                     <article className="Game-article2">
                     </article>
