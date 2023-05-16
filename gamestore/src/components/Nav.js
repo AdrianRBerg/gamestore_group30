@@ -1,14 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
-import Dashboard from './components/Dashboard';
-import GameShop from './components/GameShop';
-import MyGames from './components/MyGames';
-import MyFavorites from './components/MyFavorites';
+import Dashboard from './Dashboard';
+import GameShop from './gameshop';
+import MyGames from './MyGames';
+import MyFavorites from './MyFavourites';
 
 export default function App() {
   return (
-    <Router>
         <nav>
           <ul>
             <li>
@@ -25,6 +24,5 @@ export default function App() {
             </li>
           </ul>
         </nav>
-    </Router>
     )
 }
