@@ -20,7 +20,7 @@ export default function App() {
               <Link to="/mygames">My Games</Link>
             </li>
             <li>
-              <Link to="/favorites">My Favorites</Link>
+              <Link to="/favourites">My Favourites</Link>
             </li>
           </ul>
         </nav>
