@@ -1,38 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
+import logo from './logo.svg';
+import './App.css';
+import Gameshop from './components/gameshop'
+import { Route, Routes } from "react-router-dom"
+import GamePage from './components/GamePage';
 import MyGames from './components/MyGames';
-import MyFavorites from './components/MyFavorites';
-import GameShop from './components/GameShop';
-import { Switch, Route } from 'react-router-dom';
+import MyFavourites from './components/MyFavourites';
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li><a href="/">Dashboard</a></li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route exact path="/">
-            <Dashboard />
-          </Route>
-          <Route path="/gameshop">
-            <GameShop />
-          </Route>
-          <Route path="/mygames">
-            <MyGames />
-          </Route>
-          <Route path="/favorites">
-            <MyFavorites />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+    <Routes>
+      <Route path="/" element={<Dashboard/>}/>
+      <Route path="/Gameshop" element={<Gameshop/>}/>
+      <Route path="/game/:id" element={<GamePage/>}/>
+      <Route path="/favourites" element={<MyFavourites/>}/>
+      <Route path="/mygames" element={<MyGames/>}/>
+    </Routes>
+  )
 }
 
 export default App;

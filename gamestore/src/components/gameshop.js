@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react"
+import Buy from "./buy"
 import GameCard from "./GameCard"
-import { mygames  } from "./games"
+import { store } from "./games"
 import Nav from './Nav'
 
-
-export default function MyGames({}) {
+export default function Gameshop({}) {
+    
     return (
     <>
-    <h1>My Games</h1>
+    <h1>Gameshop</h1>
     <Nav/>
-    <h2>Owned Games</h2>
-        {mygames.map(game =>(
+    <h2>For Sale</h2>
+        {store.map(game =>(
             <>
             <section className="card" key={game.id}>
             <GameCard
@@ -19,14 +20,10 @@ export default function MyGames({}) {
                 genre={game.genres.join(', ')}
                 link={`/game/${game.slug}`}
             />
+            <Buy Link={game.link}/>
             </section>
             </> 
         ))} 
     </>
     )
 }
-
-    return (
-        <div class="flex-container"> {entries} </div>
-    )
-}   
