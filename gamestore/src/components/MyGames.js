@@ -24,9 +24,4 @@ export default function MyGames({}) {
         ))} 
     </>
     )
-}
-
-    return (
-        <div class="flex-container"> {entries} </div>
-    )
 }   
