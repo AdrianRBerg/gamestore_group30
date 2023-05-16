@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { mygames, store } from "./games.js"
+import Nav from './Nav'
 
 export default function GamePage() {
   const { id } = useParams()
@@ -8,21 +9,14 @@ export default function GamePage() {
 
 
     return (
+      <>
+        <Nav/>
         <article className="game-page">
         <h2>{game.title}</h2>
         <img src={game.img}/>
         <p>Genre: {game.genres.join(', ')}</p> {/* lister ut alle sjangre*/}
         <p>Released: {game.released}</p>
         </article>
-          )
-}
-
-    return (
-        <article className="game-page">
-        <h2>{game.title}</h2>
-        <img src={game.img}/>
-        <p>Genre: {game.genre}</p>
-        <p>Released: {game.released}</p>
-        </article>
+      </>
           )
 }

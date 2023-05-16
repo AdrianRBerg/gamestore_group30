@@ -1,6 +1,6 @@
 export default function GameCard({name, image, genre, link}) { 
     return (
-      <article className="game-card">
+      <article className="gamecard">
         <a href={link}>
         <img src={image} alt={name}/>
         </a>

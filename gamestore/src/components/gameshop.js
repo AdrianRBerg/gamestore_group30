@@ -2,15 +2,18 @@ import { useEffect, useState } from "react"
 import Buy from "./buy"
 import GameCard from "./GameCard"
 import { store } from "./games"
+import Nav from './Nav'
 
 export default function Gameshop({}) {
     
     return (
     <>
     <h1>Gameshop</h1>
+    <Nav/>
+    <h2>For Sale</h2>
         {store.map(game =>(
             <>
-            <section key={game.id}>
+            <section className="card" key={game.id}>
             <GameCard
                 name={game.title}
                 image={game.img}

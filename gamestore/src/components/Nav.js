@@ -5,7 +5,6 @@ import Dashboard from './Dashboard';
 import GameShop from './gameshop';
 import MyGames from './MyGames';
 import MyFavorites from './MyFavourites';
-import logo from '../bilde/macslogo_black'
 
 export default function Nav() {
   return (
@@ -13,7 +12,7 @@ export default function Nav() {
           <ul>
             <li>
               <Link to="/">
-                <img src={logo} alt="home"/>
+                Home
               </Link>
             </li>
             <li>

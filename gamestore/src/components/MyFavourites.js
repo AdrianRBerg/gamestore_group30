@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import GameCard from "./GameCard"
 import { mygames  } from "./games"
+import Nav from './Nav'
 
 
 export default function MyFavourites({}) {
@@ -8,10 +9,12 @@ export default function MyFavourites({}) {
                                                                 // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
     return (
     <>
-    <h1>My Games</h1>
+    <h1>Favourites</h1>
+    <Nav/>
+    <h2>Favourited</h2>
         {favourites.map(game =>( //itererer gjennom favoritter
             <>
-            <section key={game.id}>
+            <section className="card" key={game.id}>
             <GameCard
                 name={game.title}
                 image={game.img}
