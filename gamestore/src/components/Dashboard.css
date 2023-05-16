@@ -13,6 +13,11 @@ body {
     border-radius: 4px;
 }
 
+.navbar{
+ 
+  background-color: white;
+  
+}
 h1{
     color:black;   
     text-align: left;
