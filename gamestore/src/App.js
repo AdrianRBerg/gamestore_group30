@@ -1,15 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-<<<<<<< HEAD
-import MyGames from './components/MyGames';
-
-function App() {
-  return (
-    <div id="body">
-    <MyGames></MyGames>
-    </div>
-  );
-=======
 import Gameshop from './components/gameshop'
 import { Route, Routes } from "react-router-dom"
 import GamePage from './components/GamePage';
@@ -27,7 +17,6 @@ function App() {
       <Route path="/mygames" element={<MyGames/>}/>
     </Routes>
   )
->>>>>>> c56e68acde1b57ebbb4568a598b90653b2fad95e
 }
 
 export default App;
