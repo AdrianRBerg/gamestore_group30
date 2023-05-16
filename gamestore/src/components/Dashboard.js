@@ -1,8 +1,4 @@
-import {Outlet} from "react-router-dom"
 import "./stylesheet.css"
-import MyGames from './MyGames';
-import MyFavourites from './MyFavourites';
-import GameShop from './gameshop'
 import Nav from "./Nav";
 import {store, mygames} from './games'
 import GameCard from "./GameCard";

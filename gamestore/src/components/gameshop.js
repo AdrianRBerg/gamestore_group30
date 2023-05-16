@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import Buy from "./buy"
 import GameCard from "./GameCard"
 import { store } from "./games"

@@ -1,10 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
-import Dashboard from './Dashboard';
-import GameShop from './gameshop';
-import MyGames from './MyGames';
-import MyFavorites from './MyFavourites';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
   return (

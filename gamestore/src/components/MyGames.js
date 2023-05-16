@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import GameCard from "./GameCard"
 import { mygames  } from "./games"
 import Nav from './Nav'
