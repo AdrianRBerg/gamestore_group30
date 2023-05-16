@@ -5,6 +5,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1rem;
     margin: .5rem;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 ul {
@@ -43,10 +45,11 @@ img{
 }
 
 .game-card{
-    background-color: rgb(208, 206, 206);
+    background-color: rgb(216, 207, 207);
     padding: .2rem;
     margin: .2rem;
     overflow: hidden;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 button{
@@ -69,7 +72,7 @@ button:hover{
 }
 
 .game-page{
-    background-color: gray; 
+    background-color: rgb(187, 185, 185); 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -79,4 +82,5 @@ button:hover{
     margin: 0 auto;
     margin-top: 2rem;
     border-radius: 5%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
