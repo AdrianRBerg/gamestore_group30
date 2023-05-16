@@ -1,0 +1,232 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+nav {
+	background-color: #000;
+	color: #fff;
+}
+
+.nav-container {
+	max-width: auto;
+	margin-left: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+}
+
+.nav-logo {
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	margin-right: 1.3rem;
+	padding: 0;
+}
+
+.nav-links li {
+	margin-left: 20px;
+}
+
+.nav-links li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.gameshop-container {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	margin-left: 4rem;
+}
+
+.gameshop-heading {
+	font-size: 24px;
+	color: #000;
+	margin: 0;
+	margin-right: 20px;
+}
+
+.visit-shop-button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.movie-container {
+	background-color: #ddd;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	max-width: auto;
+	
+}
+
+.movie-card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 20px;
+	width: 400px;
+	max-width: auto;
+}
+
+.movie-card img {
+	width: 200px;
+	height: 220px;
+	object-fit: cover;
+	margin-right: 10px;
+}
+
+.movie-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.movie-title {
+	font-size: 18px;
+	margin-top: -30px;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+.movie-genre {
+	font-size: 14px;
+	margin: 5px 0;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+.buy-button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.my-games-heading {
+	font-size: 24px;
+	color: #000;
+	margin-top: 2rem ;
+	margin-left: 5rem;
+}
+
+.movcontainer {
+	display: flex;
+	justify-content: left;
+	margin-left: 60px;
+	align-items: flex-start;
+}
+	  
+.movie {
+	text-align: center;
+}
+	  
+.movie img {
+	width: 240px;
+	height: 160px;
+	margin: 20px;
+}
+	  
+.mov-title {
+	font-size: 18px;
+	margin-top: 10px;
+}
+	  
+.mov-genre {
+	font-size: 14px;
+	margin-top: 5px;
+}
+	  
+.favbutton {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin-left: 230px;
+}
+
+.libbutton {
+	margin-top: 15px;
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin-left: 80px;
+}
+	  
+.aside-section {
+	padding-left: 20px;
+}
+	  
+.movcontainer-aside {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+	  
+section.movie-section {
+	max-width: max-content;
+}
+	  
+.container {
+	display: flex;
+}
+	  
+.movie-section {
+	flex: 1;
+	margin-right: 20px;
+}
+	  
+.aside-section {
+	flex: 1;
+}
+
+.aside-section {
+	position: relative;
+}
+	  
+.aside-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100px;
+	width: 1.5px;
+	height: 100%;
+	background-color: #000;
+}	  
+	  
